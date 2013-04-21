@@ -1,6 +1,6 @@
 # Leve
 
-Leve (port. light) is a lightweight node.js stack for mobile web apps.
+Leve ([port. light](http://en.pons.eu/portuguese-english/leve)) is a lightweight node.js stack for mobile web apps.
 
 * [Express](http://expressjs.com)
 * [CoffeeScript](http://coffeescript.org)
@@ -16,8 +16,20 @@ When the environment is set to 'production' caching is enabled.
 
 ## Usage
 
+Install CoffeeScript and [node-dev](https://github.com/fgnass/node-dev):
+
+    $ sudo npm install -g coffee-script
+    $ sudo npm install -g node-dev
+
+Install dependencies:
+
     $ npm install .
+
+Run local server:
+
     $ node-dev app.coffee
+
+Open browser and point to [localhost:4000](http://localhost:4000)
 
 ## License
 
