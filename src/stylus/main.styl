@@ -1,0 +1,38 @@
+@import 'nib'
+@import '../../libs/mobile'
+@import '../../libs/grid'
+@import 'animation'
+columns = 12
+column-width = 60
+gutter-width = 20
+total-width = 100%
+
+reset-html5()
+
+html
+  height 100%
+  font-size 100%
+  text-size-adjust(100%)
+  user-select(none)
+  reset-webkit()
+
+body
+  font 14px "Helvetica Neue", Helvetica, Arial, sans-serif
+  padding 0px
+  margin 0 auto
+  width 100%
+  color #666
+  overflow-x hidden
+  background linear-gradient(top, #eee 0%, #ccc 100%)
+
+ul, div
+  margin 0
+  padding 0
+
+ul
+  list-style none
+
+#main
+  padding 10px
+  margin 0px auto
+  width 200px
