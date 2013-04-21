@@ -16,20 +16,35 @@ When the environment is set to 'production' caching is enabled.
 
 ## Usage
 
-Install CoffeeScript and [node-dev](https://github.com/fgnass/node-dev):
+### Install CoffeeScript and [node-dev](https://github.com/fgnass/node-dev):
 
     $ sudo npm install -g coffee-script
     $ sudo npm install -g node-dev
 
-Install dependencies:
+### Clone and init new project
 
+    $ git clone git@github.com:srohde/Leve.git
+    $ mv Leve <project_name>
+    $ cd <project_name>
+    $ rm -rf .git
     $ npm install .
 
-Run local server:
+### Run local server:
 
     $ node-dev app.coffee
 
 Open browser and point to [localhost:4000](http://localhost:4000)
+
+### Deploy to Heroku:
+
+    $ git init
+    $ git add .
+    $ git commit -m "init"
+    $ heroku create --stack cedar
+    $ heroku apps:rename --app <something_unique> <project_name>
+    $ git push heroku master
+    $ heroku config:add NODE_ENV=production
+    $ heroku open
 
 ## License
 
